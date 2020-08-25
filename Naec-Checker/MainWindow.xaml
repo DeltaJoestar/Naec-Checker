@@ -1,0 +1,32 @@
+﻿<Window x:Class="Naec_Checker.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Naec_Checker"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        MouseDown="Window_MouseDown"
+        mc:Ignorable="d"
+        Background="#252525"
+        Title="MainWindow" Height="480" Width="645" FontSize="72">
+    <Grid>
+        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Margin="0,27,0,0" Text="Naec Checker"  TextWrapping="Wrap" VerticalAlignment="Top" Height="160" Width="543" FontFamily="Microsoft YaHei UI" Foreground="#FFE94560" FontSize="48"/>
+        <Border 
+            BorderThickness="2" 
+            CornerRadius="10"
+            Background="#e94560" 
+            Padding="2" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Top" 
+            Margin="0,306,0,0" 
+            Height="58" Width="216">
+            <TextBox x:Name="idInput" Text="0101*****" TextWrapping="Wrap" VerticalAlignment="Center" Height="38" FontSize="30" FontFamily="Bahnschrift Light" BorderThickness="0,0,0,0" Foreground="White" Background="#e94560" Margin="6,0,6,0"/>
+        </Border>
+        <Button x:Name="MainButton" Content="Start" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,402,0,0" VerticalAlignment="Top" Background="#FFE94560" BorderBrush="#FFE94560" Height="31" Width="88" FontSize="18" Click="MainButton_Click"/>
+        <TextBlock x:Name="Progress"  HorizontalAlignment="Center" TextAlignment="Center" Margin="0,90,0,0" Text="Progress: 0%" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFE94560" FontSize="20"/>
+    </Grid>
+</Window>
